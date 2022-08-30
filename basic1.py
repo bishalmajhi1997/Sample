@@ -60,4 +60,16 @@ c = a+b
 b=0
 b=c
 #A compiler translates the entire source code in a single run and An interpreter translates the entire source code line by line
+#Github:Q1. What is GitHub Repository?
+#Answer:
 
+#First, we try to understand the repository sharing which stores our project code. We can refer to our latest code from there. This can be created by our referee as the local folder on your computer. Also, it can be referring as the storage space on the github, where we can keep our files, text, directory, or images any kind of files. For this, we have to first create the repository on the GitHub.
+#github:GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside 36 million developers.
+#What is GitLab?
+
+#What is GitLab? GitLab is a web-based Git repository that offers open and private repositories for free, as well as problem tracking and wikis. It’s a full DevOps platform that allows developers to handle all aspects of a project, from project planning to source code management to monitoring and security.
+#Github is a code hosting platform for version control and collaboration.it lets you and other work together on projects from anywhere.
+#1.Create and use a repository.
+#2.Start and manage a new branch
+#3.Make changes to a files and push them to github as commits
+#4.Open and merge a pull request
