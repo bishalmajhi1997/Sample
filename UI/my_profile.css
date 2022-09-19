@@ -1,0 +1,30 @@
+
+img {
+    background-color: red;
+    color: blue;
+    border: 5px brown blueviolet;
+    padding: 10px 12px 10px 12px;
+    margin: 12px 10px 12px 10px;
+    width: 350px;
+    height: 450px;
+}
+
+p {
+    color: red;
+    background-color: darkolivegreen;
+}
+
+* {
+    text-align: center;
+}
+h1{
+    color:black;
+    text-align: center;
+}
+center{
+    background-color:skyblue;
+    color:cyan;
+    border:7px dotted chocolate;
+    padding: 0px 2px 0px 2px;
+    margin: 5px 0px 5px 0px;
+}
