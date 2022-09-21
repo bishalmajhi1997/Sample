@@ -1,0 +1,13 @@
+body{
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.BsnolxGvNfEfnekhf-rubgHaLH&pid=Api&P=0"),
+    url("https://tse1.mm.bing.net/th?id=OIP.lM9VompWE40K9PLsJclIUAHaI_&pid=Api&P=0"),url("https://tse4.mm.bing.net/th?id=OIP.IzUgO9zSJVhy8LBf6LFDdQHaEK&pid=Api&P=0"),url(https://tse4.mm.bing.net/th?id=OIP.UC3ENCAXWng5hP783g90UgHaFK&pid=Api&P=0);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:400px 1000px ;
+    background-position: 0px 0px,400px 0px,800px 0px,1200px 0px;
+}
+h1{
+    text-align: center;
+    color: crimson;
+    border: 2px double white;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="F:\FSD2\Programming\UI\registrations.css">
+</head>
+
+<body>
+    <fieldset style=" color:blueviolet">
+
+        <legend>REGISTRATION FORM</legend>
+        <form action="" method="post">
+            <hr>
+            <table cellpadding="6" cellspacing="10">
+                <tr>
+                    <div>
+                        <td>
+                            <label for="na">ENTER YOUR NAME:</label>
+                            <input type="text" name="name" id="na" required>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td>
+                            <label for="pa">ENTER YOUR PASSWORD:</label>
+                            <input type="password" name="password" id="pa" required>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td>
+                            <label for="add">ENTER YOUR ADDRESS:</label>
+                            <textarea name="address" id="add" cols="30" rows="10"
+                                placeholder="Provide The Address"></textarea>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td>SELECT YOUR GENDER:</td>
+                        <td>
+                            <label for="ma">MALE:</label>
+                            <input type="radio" id="ma" name="male" checked><br>
+                            <label for="fe">FEMALE:</label>
+                            <input type="radio" id="fe" name="male" checked><br>
+                            <label for="o">OTHER:</label>
+                            <input type="radio" id="o" name="male" checked>
+                        </td>
+                        <div>
+                </tr>
+                <tr>
+                    <div>
+                        <td><label for="ci">SELECT CITY:</label>
+                            <select name="cities" id="ci">
+                                <option value="H">HYDERABAD</option>
+                                <option value="B">BANGALORE</option>
+                                <option value="P">PUNE</option>
+                                <option value="M">MUMBAI</option>
+
+                            </select>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td>SELECT YOUR HOBBIES:</td>
+                        <td><label for="s">SLEEPING:</label>
+                            <input type="checkbox" id="s" name="sleeping">
+                            <br>
+                            <label for="w">WATCHING TV:</label>
+                            <input type="checkbox" id="w" name="sleeping">
+                            <br>
+                            <label for="p">PLAYING CRICKET:</label>
+                            <input type="checkbox" id="p" name="sleeping">
+                            <br>
+                        </td>
+
+                    </div>
+
+                </tr>
+                <tr>
+                    <div>
+                        <td>
+                            <label for="dob">ENTER YOUR BIRTHDAY:</label>
+                            <input type="date" name="birth" id="dob">
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td>
+                            <label for="fi">Upload Your File:</label>
+                            <input type="file" name="file" id="fi" value="file">
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div>
+                        <td>
+                            <label for="pr">Enter Your Percentage Score:</label>
+                            <input type="number" name="score" id="pr" min="1" max="100">
+                        </td>
+                    </div>
+                </tr>
+            </table>
+            <label for="ag"></label>
+            <input type="button" name="agree" id="ag" value="I Agree">
+            <input type="submit" value="Submit">
+            <input type="reset" value="reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+p{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-display:red;
+    font-weight:bold;
+    font-variant: small-caps;
+    font-stretch: ultra-condensed;
+    font-synthesis: style;
+    color:green;
+    text-align: center;
+    text-decoration: underline;
+    text-transform:capitalize;
+    text-indent:150px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    text-shadow: 3px 4px greenyellow;
+    /* text-shadow:vertical horizontal color */
+    word-spacing: 15px;
+
+}

@@ -1,0 +1,11 @@
+body{
+    background-image: linear-gradient(skyblue,green,blue,rgb(10,20,30));
+    background-repeat: no-repeat;
+    background-size: covor;
+}
+div{
+    margin-left: 30%;
+}
+input[type=text]{
+    width:100px ;
+}

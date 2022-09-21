@@ -1,0 +1,12 @@
+body{
+    /* background-color: chartreuse; */
+    color:red;
+    /* border: 12px dotted blueviolet; */
+    padding:12px 14px;
+    margin: 14px 12px;
+    background-image:linear-gradient(skyblue,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 500px; */
+
+}
