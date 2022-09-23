@@ -1,0 +1,38 @@
+*{
+    text-align: center;
+    margin-left: 34px;
+}
+ul{
+    list-style-type:none;
+    
+}
+ol{
+    list-style-type:none;
+}
+a:link{
+    color:red
+}
+a.visited{
+    color:rgb(70,85,90);
+}
+a.hover{
+    color:brown;
+}
+a.active{
+    color: blueviolet;
+}
+body{
+    background-color:gold;
+}
+ul li::before{
+    content:"\2661";
+    margin-right: 4px;
+    color: red;
+    
+}
+ol li::after{
+    content:"\2605";
+    margin-right: 4px;
+    color: red;
+    
+}
