@@ -1,0 +1,17 @@
+table,thead,tbody,th,tr,td{
+    border:12px solid blue;
+    border-spacing:15px;
+    border-collapse: separate;
+    caption-side: bottom;
+    empty-cells: show;
+    table-layout: fixed;
+}
+p{
+    height:150px;
+    width:160px;
+    background-color:yellowgreen ;
+    overflow:auto;
+}
+span{
+    color: #fff16f;
+}

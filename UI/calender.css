@@ -1,0 +1,12 @@
+h1 {
+    color: blue
+}
+
+body {
+    background-image: url(https://images.pexels.com/photos/719396/pexels-photo-719396.jpeg?auto=compress&cs=tinysrgb&w=600), url(https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=600), url(https://images.pexels.com/photos/1496373/pexels-photo-1496373.jpeg?auto=compress&cs=tinysrgb&w=600
+);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 500px 800px;
+    background-position: 0px 0px, 500px 0px, 1000px 0px, 1500px 0px;
+}
