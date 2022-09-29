@@ -1,0 +1,32 @@
+p{
+    background-color:green;
+    float:left;
+    height:344px;
+    width:400px;
+    overflow: auto;
+}
+h1{
+    background-color: cadetblue;
+    float:right;
+    height:300px;
+    width:400px;
+    overflow: auto;
+    display:block;
+}
+.one{
+    background-color: rgb(124,123,45);
+    overflow: auto;
+    display: inline;
+    position:fixed;
+    height:150px;
+    width:250px;
+    overflow:auto;
+}
+img{
+    position:fixed;
+    top:499px;
+    bottom:354px;
+    display:block;
+    
+
+}

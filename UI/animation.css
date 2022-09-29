@@ -1,0 +1,72 @@
+.demo {
+    animation-name: colors;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+
+}
+
+.a {
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.b {
+    color: chocolate;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}
+#c{
+    animation-name: colors;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colors {
+    /* 0%{background-color:red;}
+    25%{background-color:green;} 
+    50%{background-color:yellow;} 
+    75%{background-color:slategray;} 
+    100%{background-color:black;} */
+    from{background-color: brown;}
+    to{background-color: black;}
+}
+h2{
+    animation-name:text;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    background-color:violet;
+    width:300px;
+}
+#one{
+    animation-timing-function:ease;
+    animation-direction: normal;
+    animation-fill-mode:both
+}
+#two{
+    animation-timing-function: linear;
+    animation-direction:reverse;
+    animation-fill-mode:none;
+}
+#three{
+    animation-timing-function: ease-in;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+
+}
+#four{
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+}
+
+#five{
+    animation-timing-function:ease-in-out ;
+}
+@keyframes text{
+    from{margin-left:90%;background-color: blue;}
+    to{margin-left:0%;background-color: red;}
+}

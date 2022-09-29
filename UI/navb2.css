@@ -1,0 +1,43 @@
+a{
+    padding:17px;
+    margin:3px;
+    text-decoration:none;
+    color:white;
+
+}
+a:hover{
+    background-color:green ;
+    text-decoration: underline;
+    height:9px;
+    width:9px;
+    margin: 12px;
+    padding:0px;
+}
+input{
+
+    color: white;
+    padding: 5px 5px;
+}
+p{
+    background-color: black;
+    text-decoration:none;
+
+}
+font{
+    color: darkblue;
+}
+ul{
+    background-color: black;
+    height:650px;
+    width:180px;
+    overflow: scroll;
+    margin: 10px;
+    padding:24px;
+}
+li a{
+    color:white;
+    padding:8px;
+    margin:10px;
+    word-spacing:4px;
+    /* float:left; */
+}

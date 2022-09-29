@@ -16,6 +16,6 @@ p{
     line-height: 30px;
     text-shadow: 3px 4px greenyellow;
     /* text-shadow:vertical horizontal color */
-    word-spacing: 15px;
+    word-spacing:0px;
 
 }
