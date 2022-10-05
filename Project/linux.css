@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+div{
+   text-align: center;
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   border-top:20px dotted red;
+   border-right:20px dotted grey;
+   border-bottom: 20px dotted blanchedalmond;
+   border-left:20px dotted hotpink;
+   /* border-color: blue red greenyellow whitesmoke green grey; */
+   background-image:url(https://tse2.mm.bing.net/th?id=OIP.O9b0gX-_xcmb0V2iwlrUMQHaEK&pid=Api&P=0);
+   
+   
+}
+a{
+  font-size:17px;
+}
