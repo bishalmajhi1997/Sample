@@ -1,0 +1,105 @@
+#a{
+    background-color: black;
+    font-size:20px;
+    /* padding:9px;
+    margin:10px;
+    width:1520px; */
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#a a{
+    text-decoration: none;
+    color:white;
+
+}
+#a a:hover{
+    background-color:white;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:blue;
+}
+#b{
+    text-decoration: none;
+    font-size: 40px;
+    background-color: black;
+    border-radius: 2%;
+}
+#c{
+    text-decoration: none;
+    font-size: 40px;
+    background-color:red;
+    border-radius: 2%;
+}
+#b a:hover{
+    text-decoration: underline;
+    background-color: blueviolet;
+}
+#c a:hover{
+    text-decoration:underline;
+    background-color: chartreuse;
+}
+h3{
+   font-size:28px;
+   font-family:Arial, Helvetica, sans-serif;
+   color:cadetblue;
+}
+h2{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:rgb(73, 150, 227);
+}
+.india:after{
+    content: "";
+    animation:india 10s infinite linear;
+    color:blueviolet;
+}
+@keyframes india{
+   0%{
+    content:"Bhubaneswar";
+    color:blue;
+   }
+   10%{
+    content: "Hyderabad";
+    color:brown;
+   }
+   20%{
+    content:"Bengaluru";
+    color:chocolate;
+   }
+   30%
+   {
+    content:"Chennai";
+    color:darksalmon;
+   }
+   40%{
+    content:"Mumbai";
+    color:indianred;
+   }
+   50%{
+    content:"Kolkata";
+    color:darkmagenta;
+   }
+   60%{
+    content:"New Delhi";
+    color:indigo;
+    }
+    70%{
+        content:"Noida";
+        color:lightcyan;
+    }
+   80%{
+    content:"Ladakh";
+    color:lawngreen;
+   }
+   90%{
+    content:"Ranchi";
+    color:dodgerblue;
+   }
+   100%{
+    content:"Kedarnath";
+    color:lime;
+   }
+}

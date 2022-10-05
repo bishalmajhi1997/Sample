@@ -2,7 +2,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    height: 320px;
+    height: 150px;
     width: 120px;
     background-color: brown;
 }
@@ -11,7 +11,7 @@
     color: blue;
     display: block;
     text-decoration: none;
-    padding: 30px;
+    padding: 10px;
 }
 
 a:hover {
@@ -33,7 +33,7 @@ a:hover {
     color: blue;
     display: block;
     text-decoration: none;
-    padding: 40px;
+    padding: 30px;
     float: left;
 }
 
@@ -52,4 +52,7 @@ p{
 }
 body{
     background-color: black;
+}
+i{
+    color:whitesmoke;
 }
