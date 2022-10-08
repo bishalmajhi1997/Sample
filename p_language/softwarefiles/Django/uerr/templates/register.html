@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% block start %}
+<div class="content-section col-md-8 col-md-offset-2">
+  {% if registered %}
+      <h1>THANK YOU FOR REGISTERING</h1>
+  {% else %}
+  <form enctype="multipart/form-data" action={% url 'register'%} method="POST" style="border: 1px solid black; margin: 4%; padding:10%; border-radius:1%;">
+    {% csrf_token %}
+    <label for="users">User type:</label>
+    <select name="users" id="users">
+      <option value="business">Business</option>
+      <option value="individual">Individual</option>
+
+    </select>
+      {{ form }}
+      
+    <center>
+      <button id="myBtn" style="background: black; padding:2%; font-size: 2rem; color:white;" class="btn btn-outline-info" type="submit"><span class="glyphicon glyphicon-check"></span> &nbsp; sign up</button>
+      <!--<button   oneclick="disableBtn()"  style="background: black; padding:2%; font-size: 2rem; color:white;" class="btn btn-outline-info"><span class="glyphicon glyphicon-check"></span>Disable "My &nbsp; sign up" </button>
+      <button   oneclick="enableBtn()"  style="background: black; padding:2%; font-size: 2rem; color:white;" class="btn btn-outline-info"><span class="glyphicon glyphicon-check"></span>Enable "&nbsp; sign up" </button>
+      <script>
+        function disableBtn(){
+          document.getElementById('myBtn').disabled=true;
+        }
+
+        function enableBtn(){
+          document.getElementById('myBtn').disabled=false;
+        }
+
+
+      </script>-->
+      <script type="text/javascript">
+        const submitButton=documnet.getElementById('myBtn')
+        input.addventListener{"keyup",(e)=>{
+          const value=e.currentTarget.value:
+          if (value===""){
+            submitButton.disabled=false;
+          }
+          else{
+            submitButton.disabled=true;
+          }
+        }};
+
+      </script>
+
+    </center>
+  </form>
+  {% endif %}
+</div>
+{% endblock start %}

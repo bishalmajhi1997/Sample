@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>DJANGO MAIL DEMO</title>
+  </head>
+  <body>
+    <h1>THIS IS HOME PAGE</h1>
+    <form class="" action={% url 'send_gmail' %} method="POST">
+      {% csrf_token %}
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Put Your name">
+
+      </div>
+      <div >
+        <label for="sbj">Subject:</label>
+        <input id="sbj name="subject" type="text" placeholder="Put Your subject">
+
+
+      </div>
+      <div>
+        <label for="msg">Subject:</label>
+        <input id="msg" name="message" type="text" placeholder="Put Your message">
+
+
+      </div>
+      <input type="submit" name="" value="send Mail">
+
+    </form>
+
+  </body>
+</html>

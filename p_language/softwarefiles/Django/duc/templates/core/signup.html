@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% block title %}SIGN UP {% endblock title %}
+{% block main_content %}
+<div class="container">
+  <div class="row justify-content-around my-5">
+    <div class="col-sm-8">
+      <h3 class="text-black text-center">SIGN UP FORM</h3>
+  </div>
+ </div>
+ <div class="row justify-content-around my-5">
+   <div class="col-sm-8">
+       <form action="" method="POST" class='bg-blue p-3 rounded'>
+         {% csrf_token %}
+              <label for="users">User type:</label>
+              <select name="users" id="users">
+                      <option value="business">Business</option>
+                      <option value="individual">Individual</option>
+
+               </select>
+               {% for fm in form %}
+                    {{fm.label_tag}}
+                    {{fm}}
+                    <small>{{fm.errors|striptags}}</small>
+               {% endfor %}
+
+
+           <input type="submit" name="" value="Submit" class='btn btn-primary my-2'>
+        </form>
+   </div>
+ </div>
+
+</div>
+{% endblock main_content %}

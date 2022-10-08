@@ -1,0 +1,40 @@
+{% extends 'basic_app/base.html'%}
+{% load static %}
+{% block body_block %}
+<div class="container">
+  <div class="jumbotron">
+    {% if registered %}
+       <h1> Thank you For registering !</h1>
+    {% else %}
+       <form enctype="multipart/form-data" method="POST">
+       {% csrf_token %}
+       <div>
+         <label for="name">Name:</label>
+         <input id='name' name='name' type="text" placeholder="Put Your Name">
+
+         <label for="sbj">Subject:</label>
+         <input id='sbj' name='subject' type="text" placeholder="Put Your Subject">
+
+         <label for="msg">Message:</label>
+         <input id='msg' name='message' type="text" placeholder="Put Your Message">
+
+         <label for="userid">userid:</label>
+         <input id='userid' name='USERNAME' type="email" placeholder="Put Your USERID">
+
+
+         <label for="psd">Password:</label>
+         <input id='psd' name='password' type="password" placeholder="Put Your password">
+
+
+
+
+       </div>
+       <input type="submit" value="SUBMIT">
+       {% endif %}
+
+     </form>
+
+   </div>
+
+ </div>
+{% endblock %}
