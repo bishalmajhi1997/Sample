@@ -1,0 +1,40 @@
+img{
+    height: 240px;
+    width:100%;
+    padding-left:0px;
+    margin-left:0px;
+}
+header{
+    border:3px solid red;
+    text-align: center;
+    font-size:9px;
+    background-color: aqua;
+    height:45px;
+}
+p{
+    font-size: small;
+    border:1px solid red;
+    margin-top:2px;
+    font-size: small;
+    color:white;
+}
+h2{
+    text-align: left;
+    color:black;
+    background-color:yellowgreen;
+    border:2px solid black;
+    font-size: medium;
+    margin-top:0px;
+}
+ul{
+    text-align: small;
+    color: cadetblue;
+    border: 1px solid red;
+}
+ul li{
+    border:2px solid salmon;
+    color:darkorange;
+}
+body{
+    border:2px solid salmon;
+}

@@ -1,0 +1,39 @@
+header{
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    /* background-color: black; */
+}
+nav{
+    float:left;
+    font-size: small;
+    padding-right: 10%;
+    padding-top:1px;
+    margin:1px;
+    height:100%;
+    position: fixed;
+}
+h1{
+    height: 30px;
+    width:200px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: darkcyan;
+    color:aliceblue;
+}
+h1 a:hover{
+    text-decoration: underline;
+    color:blueviolet;
+    background-color: coral;
+}
+h3{
+    font-size:30px; 
+    padding-bottom:2px ;
+}
+main{
+    padding-left: 25%;
+    
+}
