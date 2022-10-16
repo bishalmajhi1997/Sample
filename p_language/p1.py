@@ -32,7 +32,7 @@ a=11
 print(a)
 print(id(a))
 #Types of variable assignment
-#1.Multiple variables,Single variables
+#1.Multiple variables,Single assignments
 a=b=c=5
 print(a,b,c)
 #2.Mum=ltiple variable,multiple assignments
@@ -76,8 +76,8 @@ print(type(a))
 print(3<2)
 #5.Represent number in different format-binary,hexadecimal,octal
 print(bin(10))
-print(hex(10))
-print(oct(10))
+print(hex(45))
+print(oct(43))
 #type conversion(type casting)-coverting one data type into another
 #1.convert a floating point number to integer
 a=10.5
