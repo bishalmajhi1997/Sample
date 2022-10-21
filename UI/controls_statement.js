@@ -1,3 +1,4 @@
+// conditions control statements:if,if..else,else if,nested if,switch case
 // == :compare with values
 // ===:compare value along with datatypes
 // simple if
@@ -59,3 +60,29 @@ switch(monthnumber){
 }
 
 console.log(monthname);
+// looping statements:for loop while,do..while
+// while
+var i=0;//initialization
+while (i<=10){//test condition
+    console.log("hello js",i);
+    i++;//i=i+1 //iterartion statements
+}
+// do..while loop
+var j=0;
+do{
+    console.log("hello js",j);
+    j++;
+}
+while(j<=5);
+// for loop
+for(var k=0;k<5;k++){
+    console.log("hello js",k);
+}
+for(var i=1;i<=10;i++){
+     document.write("2*"+i+"="+2*i+"<br>")
+}
+// var fact=5;
+// for(var i=1;i<=5;i++){
+//      fact*=i;
+//      console.log(fact)
+// }

@@ -9,7 +9,7 @@ d={1:"john",2:"abhi",3:"suresh"}
 print(d)
 mydict={
     "brand":"bmw",
-    "models":"3series",
+    "models":"3seriees",
     "year":2019
 }
 print(mydict)
@@ -76,11 +76,20 @@ print(d1["key3"])
 
 
 #dictionary constructor-dict()
-
+colors=dict()
+colors["yellow"]=(100,22,1)
+colors["green"]=(100,99,1)
+colors['blue']=(22,12,11)
+print(colors)
+dict1=dict(make="ford",model="ikon",year=2018)
+print(dict1)
+# dict1=dict(1="ford",2="ikon",3=2018) integer can not be taken.
+print(dict1)
+#adding keyword constructors
 #practice questions
 #create a dictionary
 #access items to dictionary
 #add items to dictionary
 #change value of a dictionary
 #nested dictionary
-#dict constructor
+#dict constructor=dict()
