@@ -1,5 +1,6 @@
 # everything in python made up of object
-# objects can be iterable.
+# objects can be iterable, The term iterable means to move over the elements of sequence.
+
 # for loop is used to make iterations
 # syntax of for loop
 # myseq=[1,2,3]
@@ -58,3 +59,15 @@ for i,j in d1.items():
     print(i,j)
 for i in d1.items():
     print(i)
+# print number 50,70
+for i in range(50,70):
+    print(i)
+print()
+for i in range(50,70,2):
+    print(i)
+# print multiplication table of a given number.
+x=int(input("Enter a number:"))
+for i in range(1,11):
+    print(i*x)
+for i in range(1,11):
+    print(x,"X",i,'=',i*x)

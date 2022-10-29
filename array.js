@@ -66,7 +66,7 @@ console.log("after sort:",num);
 // 7.reverse()
 num.reverse();
 console.log("after reverse:",num);
-
+// rest opeartor
 function add(a,...b)//rest opearator(...)
 {
     console.log(a);
@@ -81,5 +81,18 @@ for(var x of statement){
 // filter
 var x;
 var num1=[100,200,300]
-var result=num1.filter((x)=>(x>100))
-console.log(result)
+var result=num1.filter((x)=>(x>100));
+console.log(result);
+var num2=[100,200,"bishal"]
+k=num2.toString()
+console.log(k);
+m=num2.join(" # ")
+console.log(m);
+// map
+var num11=[100,200,300,400]
+var result=num11.map(x=>x*100)
+console.log(result);
+// concat
+var num22=[11,33]
+var w=num22.concat(num11)
+console.log(w)
