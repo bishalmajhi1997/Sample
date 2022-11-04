@@ -1,0 +1,79 @@
+p
+{
+    text-align: end;
+    margin-inline: 100px;
+    shape-margin: 20px;
+    margin-inline: 100px;    
+    
+}
+.circle {
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    border: 30px solid ;
+    border-radius: 70%;
+    border-color: red blue green orange ; 
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+
+}
+.blink
+{
+    animation: blinker 2.5s linear infinite;
+    color: red;
+    font-style: italic;
+}
+@keyframes blinker
+{
+    50%{
+        opacity: 0;
+
+    }
+}
+.blink1
+{
+    animation: blinker 2.5s linear infinite;
+    color: yellow;
+}
+@keyframes blinker
+{
+    50%{
+        opacity: 0;
+    }
+}
+
+.btn1{
+    text-align: right;
+    padding-right: 200px;
+    
+}
+.btn1 button{
+    background-color: blue;
+    color: white;
+    border-radius: 20%;
+    
+}
+
+
+.btn2{
+    text-align: right  ;
+    margin-top: -62px;
+    padding-right: 70px;
+}
+.btn2 button{
+    background-color: blue;
+    color:white;
+    border-radius: 20%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: red;
+}
