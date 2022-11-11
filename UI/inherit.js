@@ -30,6 +30,9 @@ class Person{
     personName;
     personAge;
     constructor(pname,page){
+        if(this.constructor==Person){
+            throw new Error("Abstract class cannot be access")
+        }
         this.personName=pname;
         this.personAge=page;
     }
@@ -50,12 +53,12 @@ class Teacher23 extends Person{
 
 
 }
-let person1=new Person("bishal,25");
-console.log(person1)
+// let person1=new Person("bishal,25");
+// console.log(person1)
 let person2=new Teacher23("Html","Sumit",26);
 console.log(person2);
 console.log(person2.tgetDetails());
-console.log(person1.getDetails1());
+// console.log(person1.getDetails1());
 // class Person
 // {
 //     personName;
