@@ -37,3 +37,5 @@ car2=Car()
 print(car2.make)
 print(car2.model)
 print(car2.year)
+# practise session
+# create a class laptop:make,model,price and create 2 objescts

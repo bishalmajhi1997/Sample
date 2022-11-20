@@ -1,0 +1,14 @@
+body{
+    background-color: greenyellow;
+    text-align: justify;
+}
+center{
+    background-color:black;
+    border-bottom-left-radius: 520px;
+    border-bottom-right-radius: 520px;
+    width:520px;
+    padding:10px;
+    margin-left:700px;
+    color:white;
+    
+}
