@@ -44,6 +44,7 @@ for(i in std){
     console.log(`${i} in ${std[i]}`)
 }
 for (k in emp){
+    console.log(k)
     if(k==emp.empaddres){
         for(k1 in emp.empaddres){
             console.log(`${k1} is ${emp.empaddres[k1]}`)
