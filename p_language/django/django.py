@@ -1,3 +1,11 @@
+# c1::python --version
+# c2::pip --version
+# c3::pip install virtualenv
+# c4::pip install virtualenvwrapper-win
+# c5::pip install django==3.0
+# c6::mk means make directory
+# 67::django-admin startproject project_name
+
 # 1.Django is a free and open source web framework.
 # Django is used by many sites including pinterest,PBS,instagram,BitBucket,Mozila and more.
 # Django is an excellent choice for any developer who wants to build modern,robust web application with a minimal amount of code.
@@ -33,4 +41,3 @@
 # models.py:is where we define our database models,which django automatically translates into database tables.
 # test.py:is for our app-specific test.\
 # views.py:is where we handle the request/response logic for our web app.
-
