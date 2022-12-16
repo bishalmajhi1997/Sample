@@ -6,6 +6,11 @@
 # c6::mk means make directory
 # 67::django-admin startproject project_name
 
+# 11.Open django project in vscode.
+# 12.Create a django application by writing the below command in terminal
+    #   python manage.py startapp appname
+# 13.In the project setting.py file,in installed apps
+
 # 1.Django is a free and open source web framework.
 # Django is used by many sites including pinterest,PBS,instagram,BitBucket,Mozila and more.
 # Django is an excellent choice for any developer who wants to build modern,robust web application with a minimal amount of code.
