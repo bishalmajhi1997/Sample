@@ -12,6 +12,10 @@ import SignUp from "./signup";
 import Login from "./login";
 import Images from "./image";
 import Customerlist from "./Customerlist.jsx"
+import Angular from "./Angular";
+import React1 from "./React";
+import Technologies from "./Technologies";
+import Hook from "./hook";
 class App extends Component{
     render(){
         return(
@@ -27,6 +31,12 @@ class App extends Component{
                         <Route path="/Login" exact element={<Login/>}></Route>
                         <Route path="/Images" exact element={<Images/>}></Route>
                         <Route path="/Customerlist" exact element={<Customerlist/>}></Route>
+                        <Route path="/Pagenotfound" exact element={<PageNotFound/>}></Route>
+                        <Route path="/Hook" exact element={<Hook/>}></Route>
+                        <Route path="/Technologies" exact element={<Technologies/>}>
+                            <Route path="React1" exact element={<React1/>}></Route>
+                            <Route path="Angular" exact element={<Angular/>}></Route>
+                        </Route>
                         <Route path="*" exact element={<PageNotFound/>}></Route>
 
                     </Route>
