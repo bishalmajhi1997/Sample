@@ -152,6 +152,9 @@ class NavBar extends Component {
                 <li className="nav-item">
                   <Link className="nav-link" to="/Hook">Hook</Link>
                 </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Reactts">Api</Link>
+                </li>
                 <li className="nav-item dropdown">
                   <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Technologies

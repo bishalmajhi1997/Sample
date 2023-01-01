@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 
 export default function Hook() {
     const [count,setCount]=useState(0)
@@ -8,6 +8,12 @@ export default function Hook() {
     const decrement=()=>{
         setCount(count-1)
     }
+    useEffect(()=>{
+        document.title=`You clicked ${count} times`
+    })
+    const Click=()=>{
+        setCount(count+1)
+    }
 
 
     return (
@@ -15,6 +21,9 @@ export default function Hook() {
         <button onClick={increment}>+</button>
         <span>{count}</span>
         <button onClick={decrement}>-</button>
+        <br />
+        <p>You clicked {count} times</p>
+        <button onclick={Click}>Click me</button>
 
         </div>
     )

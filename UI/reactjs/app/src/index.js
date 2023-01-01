@@ -6,6 +6,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import App from "./App.jsx";
 import "./App.css"
+// import  ReactDOM from "react/client";
+// const root=ReactDOM.createRoot(document.getElementById("root"))
+// root.render(<App />)
+
+
 
 ReactDOM.render(<App/>,document.getElementById("root"));
 

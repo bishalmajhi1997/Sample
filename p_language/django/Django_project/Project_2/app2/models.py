@@ -1,6 +1,7 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from address.models import AddressField
+# from django.contrib.auth import User 
 
 
 # Create your models here.
@@ -24,4 +25,5 @@ class Student(models.Model):
     address =models.TextField(blank=True,max_length=100)
     def __str__(self):
         return str(self.contact)
+
 

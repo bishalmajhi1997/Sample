@@ -1,4 +1,30 @@
-<!DOCTYPE html>
+{% extends "app2/base.html" %}
+{% block title %}Formpage2{% endblock %}
+    {% block content %}
+        <form action = "" method = "post">
+            {% csrf_token %}
+            <table>
+                {{ forms.as_table }}
+            </table>
+            <input type="submit" value="Sign Up">
+        </form>
+    
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,4 +46,4 @@
     
 </body>
 
-</html>
+</html> -->

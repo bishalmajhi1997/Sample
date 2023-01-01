@@ -1,4 +1,58 @@
-<!DOCTYPE html>
+{% extends "app2/base.html" %}
+{% block title %}Formpage2{% endblock %}
+     {% block content %}
+     <div class="container">
+        {% if dict1 %}
+        <table border="2" cellpadding="2px" cellspacing="3px">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+
+            {% for acc in dict1 %}
+            <tr>
+                <td>{{acc.first_name}}</td>
+                <td>{{acc.last_name}}</td>
+                <td>{{acc.email}}</td>
+                <!-- <td>{{acc.topic}}</td> -->
+                <!-- <td>{{acc.url}}</td> --> -->
+            </tr>
+            {% endfor%}
+        </table>
+        {% else %}
+        <p>No access Record found</p>
+        {% endif %}
+    </div>
+
+     {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +76,7 @@
                 <td>{{acc.email}}</td>
                 <!-- <td>{{acc.topic}}</td> -->
                 <!-- <td>{{acc.url}}</td> --> -->
-            </tr>
+            <!-- </tr>
             {% endfor%}
         </table>
         {% else %}
@@ -31,4 +85,4 @@
     </div>
 
 </body>
-</html>
+</html> --> -->

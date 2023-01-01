@@ -4,7 +4,7 @@ import React,{ Component } from "react";
 import NavBar from "./NavBarr";
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from "./home"
-import Dashobard from "./dashboard";
+// import Dashobard from "./dashboard";
 import Customer from "./customer";
 import ShoppingCart from "./ShoppingCart";
 import PageNotFound from "./pagenotfound";
@@ -16,6 +16,9 @@ import Angular from "./Angular";
 import React1 from "./React";
 import Technologies from "./Technologies";
 import Hook from "./hook";
+import Reactts from "./api"
+const Lazycustom= React.lazy(() => import('./dashboard'));
+
 class App extends Component{
     render(){
         return(
@@ -24,7 +27,9 @@ class App extends Component{
                  <Routes>
                     <Route path="/" element={<NavBar/>}>
                         <Route index element={<Home/>}></Route>
-                        <Route path="/Dashobard" exact element={<Dashobard/>}></Route>
+                        <Route path="/Dashobard" exact element={
+                            <React.Suspense fallback="loading..."><Lazycustom/></React.Suspense>
+                        }></Route>
                         <Route path="/Customer" exact element={<Customer/>}></Route>
                         <Route path="/ShoppingCart" exact element={<ShoppingCart/>}></Route>
                         <Route path="/SignUp" exact element={<SignUp/>}></Route>
@@ -33,6 +38,7 @@ class App extends Component{
                         <Route path="/Customerlist" exact element={<Customerlist/>}></Route>
                         <Route path="/Pagenotfound" exact element={<PageNotFound/>}></Route>
                         <Route path="/Hook" exact element={<Hook/>}></Route>
+                        <Route path="/Reactts" exact element={<Reactts/>}></Route>
                         <Route path="/Technologies" exact element={<Technologies/>}>
                             <Route path="React1" exact element={<React1/>}></Route>
                             <Route path="Angular" exact element={<Angular/>}></Route>
