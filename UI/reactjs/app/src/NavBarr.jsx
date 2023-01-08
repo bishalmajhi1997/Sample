@@ -138,6 +138,9 @@ class NavBar extends Component {
                   <Link className="nav-link" to="/SignUp">Signup</Link>
                 </li>
                 <li className="nav-item">
+                  <Link className="nav-link" to="/Signup1">Signup1</Link>
+                </li>
+                <li className="nav-item">
                   <Link className="nav-link" to="/Login">Login</Link>
                 </li>
                 <li className="nav-item">
@@ -151,6 +154,15 @@ class NavBar extends Component {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/Hook">Hook</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Registrations">Registrations</Link>
+                </li>
+                {/* <li className="nav-item">
+                  <Link className="nav-link" to="/email1">email</Link>
+                </li> */}
+                <li className="nav-item">
+                  <Link className="nav-link" to="/Logout">Logout</Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/Reactts">Api</Link>

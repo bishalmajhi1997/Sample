@@ -3,7 +3,7 @@ from .forms import UserInfoForm,UserProfileInformation
 # from django.contrib.auth import User
 from django.urls import reverse
 from .models import UserProfile
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate,logout
 from django.contrib import messages
 from django.http import HttpResponse,HttpResponseRedirect
 
@@ -61,3 +61,7 @@ def user_login(request):
             messages.info(request,"username and password does not matches")
     context={}
     return render(request,"app3/login.html",context)
+
+def user_logout(request):
+    logout(request)
+    return redirect('login')

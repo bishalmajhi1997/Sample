@@ -18,7 +18,7 @@ def post1():
     r=requests.post(url=url,data=json_data)
     data=r.json()
     print(data)
-# post1()
+post1()
 def update1():
     data={"id":5,"name":"Tripathi","roll":105,"city":"NEW DELHI"}
     json_data=json.dumps(data)
@@ -33,5 +33,5 @@ def delete1():
    r=requests.delete(url=url,data=json_data)
    data=r.json()
    print(data)
-delete1()
+# delete1()
 
