@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // case sensitivy
+        var text="Visit w3schools."
+        var result=text.match(/w3schools/i);
+        console.log(result)
+        document.write(result)
+        // global search
+        var global1="Is this all there is?";
+        var result2=global1.match(/is/g)
+        document.writeln("<br>"+result2)
+        //multiline
+        let multiline = "\nIs th\nis it?";
+        var result3=multiline.match(/^is/m)
+        document.writeln("<br>"+result3)
+
+
+    </script>
+</body>
+</html>

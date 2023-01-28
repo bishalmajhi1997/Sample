@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="add" id="">
+        <input type="submit" value="Login1">
+    </form>
+    <button>Login</button>
+    <script>
+        var a=document.querySelector('button')
+        var greet=function(e){
+                console.log('hello');
+        }
+        a.addEventListener("click",greet);
+
+        var b=document.querySelector('form');
+        var greet1=function(e){
+            e.preventDefault()
+            console.log(b.add.value);
+            console.log(e)
+            b.reset()
+        }
+        b.addEventListener("submit",greet1)
+    </script>
+</body>
+</html>
