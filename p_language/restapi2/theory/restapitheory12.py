@@ -30,5 +30,24 @@
 # {'token':'9299999999999hhshdh8882'}
 # It also generates token if the token is not generated for the provided user.
 
+# HTTPIE
+# Httpie(pronounced aitech-tee-tee-pie) is a command line HTTP client.Its goal is to make CLI interaction with web services as human-friendly as possible.It provides a simple http command that allow for sending arbitary HTTp requests using a simple and natural syntax,and display colorized output.HTTPie can be used for testing,debugging,and generally interacting with HTTP servers.
+# Syntax:http [flags] [METHOD] URL [ITEM[ITEM]]
+# How to install
+# pip install httpie
+
+# USE HTTPIE
+# http http://127.0.0.1:8000/studentapi/(GET REQUEST)
+# http http://127.0.0.1:8000/studentapi/ 'Authorization:Token 62626626mdmd2222'(GET REQUEST with token)
+# http -f POST http://127.0.0.1:8000/studentapi/ name=jay roll=105 city=dhanbad 'Authorization:Token 2662626nndhdh222'(POST REQUESTING SUBMITTING FORM)
+# http PUT http://127.0.0.1:8000/studentapi/4/ name=jay roll=105 city=dhanbad 'Authorization:Token 2662626nndhdh222'(PUT REQUESTING SUBMITTING FORM)
+# http DELETE http://127.0.0.1:8000/studentapi/'Authorization:Token 2662626nndhdh222'(DELETE REQUESTING SUBMITTING FORM)
+
+
+
+# CUSTOM AUTHENTICATION
+# To implement a custom authentication scheme,subclass baseauthentication and override the the authenticate(self,request) method.
+# The method should return  a two-tuple of(user,auth)if authentication succeeds or None otherwise.
+# http://127.0.0.1:8000/student/1/?username=bishalmajhi1997@gmail.com(put)
 
 
