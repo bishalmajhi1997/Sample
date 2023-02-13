@@ -84,8 +84,6 @@ insert into cities_grandchild values(13,'balangir',4)
 insert into cities_grandchild values(14,'keonjhar',5)
 insert into cities_grandchild values(15,'athagarh',5)
 insert into cities_grandchild values(16,'mak',6)
-insert into cities_grandchild values(17,'guntur',6)
-
 select * from states_child
 select * from countries
 select * from cities_grandchild

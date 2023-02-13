@@ -1,0 +1,184 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/pro.css' %}">
+  <script src="https://kit.fontawesome.com/9d025e3937.js" crossorigin="anonymous"></script>
+</head>
+
+<body background="{% static 'images/gif.gif'%}">
+  {% block content %}
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <nav class="navbar navbar-expand-sm navbar-dar fixed-top" style="background-color:#4f89bb">
+    <a class="navbar-brand" href="https://learnwithprojects.com/"><img src="{% static 'images/levelup.png' %}" alt=""
+        width="100px" height="40px"></a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5 ">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <li class="nav-item active pl-3">
+          <a class="nav-link shadow bg-warning" href="{% url 'api:index' %}">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active pl-3">
+          <a class="nav-link shadow bg-warning" href="{% url 'api:team' %}">Team<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active pl-3">
+          <a class="nav-link shadow bg-warning" href="{% url 'api:contact' %}">Contact<span
+              class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active pl-3">
+          <a class="nav-link shadow bg-warning" href="{% url 'api:signup' %}">SignUp<span
+              class="sr-only">(current)</span></a>
+        </li>
+        {% if user.is_authenticated %}
+          <li class="nav-item active pl-3">
+            <a class="nav-link shadow bg-warning" href="{% url 'api:user_logout' %}">Logout</a>
+          </li>
+        {% else %}
+          <li class="nav-item active pl-3">
+             <a class="nav-link shadow bg-warning" href="{% url 'api:user_login' %}">Login</a>
+           </li>
+        {% endif %}
+      </ul>
+  </nav>
+  <div class="container">-->
+    <div class="circle mx-auto ">
+      <h1>
+        <font class="blink" color="white">learn</font>
+        <font color="aqua">linux</font> <br>
+        <font class="blink2" color="white" size="100px" class="size">levelup</font>
+      </h1>
+    </div>
+  </div>
+  <img src="{% static 'images/linux.png' %}" alt="" width="200px" height="200px">
+  <footer class="text-center text-lg-start bg-white text-muted ">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="me-5">
+        <span class="h6 float-sm-left" style="color:red"> Get connected with us on social networks:</span>
+      </div>
+      <div class="social h6 float-sm-right">
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h4 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3 text-secondary"></i>
+              <font color="green">COMPANY</font>
+            </h4>
+            <p>
+              <img src="{% static 'images/levelup1.png' %}" alt="">
+            </p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h4 class="text-uppercase fw-bold mb-4">
+              <font color="red"> COURSE </font>
+            </h4>
+            <p>
+              <a href="#!" class="text-reset">HTML,CSS</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Bootstrap,React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Javascript</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Python,Django</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Mangodb</a>
+            </p>
+
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h4 class="text-uppercase fw-bold mb-4">
+              <font color="blue"> Useful links</font>
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h4 class="text-uppercase fw-bold mb-4">
+              <font color="black">CONTACT</font>
+            </h4>
+            <p><i class="fas fa-home me-3 text-secondary"></i> Ameerpet,Hyderabad,India</p>
+            <p>
+              <i class="fas fa-envelope me-3 text-secondary"></i>
+              info@defenders.levelup.com
+            </p>
+            <p><i class="fas fa-phone me-3 text-secondary"></i> +91 7337266011</p>
+            <p><i class="fas fa-print me-3 text-secondary"></i> +91 8886799074</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: lightpink">
+      © Come and visit
+      <a class="text-reset fw-bold" href="">@learnlinux.com</a>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  {% endblock %}
+
+
+</body>
+
+</html>
